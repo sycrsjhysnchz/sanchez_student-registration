@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .registration-card {
+            max-width: 500px;
+            margin: 50px auto;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .registration-header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            font-weight: bold;
+        }
+        .course-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            height: 100%;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-register {
+            background-color: #198754;
+            color: white;
+            width: 100%;
+        }
+        .btn-register:hover {
+            background-color: #157347;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+    
+    <div class="card registration-card mb-5">
+        <div class="registration-header">
+            Student Registration Form
+        </div>
+        <div class="card-body p-4">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Course</label>
+                    <select class="form-select">
+                        <option value="1">Information Technology</option>
+                        <option value="2">Computer Science</option>
+                        <option value="3">Information Systems</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label d-block">Gender</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-register">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <h2 class="text-center mb-5">Our Courses</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=500" class="card-img-top" alt="IT">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Information Technology</h5>
+                    <p class="card-text text-muted">Learn programming, networking, and system development using modern tools.</p>
+                    <a href="#" class="btn btn-primary w-100 mt-auto">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=500" class="card-img-top" alt="CS">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Computer Science</h5>
+                    <p class="card-text text-muted">Focus on algorithms, coding, and software engineering fundamentals.</p>
+                    <a href="#" class="btn btn-success w-100 mt-auto">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card course-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500" class="card-img-top" alt="IS">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Information Systems</h5>
+                    <p class="card-text text-muted">Study business systems, databases, and technology solutions.</p>
+                    <a href="#" class="btn btn-warning w-100 mt-auto">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
